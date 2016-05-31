@@ -15,6 +15,9 @@ namespace pjtCidadedeira.Models
         public string LinkImagem { get; set; }
         public string Status { get; set; }
         public int UsuarioID { get; set; }
+        public int EnderecoID { get; set; }
         public virtual Categoria Categoria { get; set; }
+        public virtual Endereco Endereco { get; set; }
+        public virtual ICollection<Comentario> Comentario { get; set; }
     }
 }

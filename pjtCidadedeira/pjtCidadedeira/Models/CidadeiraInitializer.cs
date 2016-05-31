@@ -7,7 +7,7 @@ using System.Web;
 namespace pjtCidadedeira.Models
 {
     
-    public class CidadeiraInitializer : System.Data.Entity.DropCreateDatabaseAlways<CidadeiraDBContext>
+    public class CidadeiraInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<CidadeiraDBContext>
     {
         protected override void Seed(CidadeiraDBContext context)
         {
@@ -18,12 +18,27 @@ namespace pjtCidadedeira.Models
                 };
             categorias.ForEach(s => context.Categorias.Add(s));
             context.SaveChanges();
+
             var reclamacoes = new List<Reclamacao>
                 {
                     new Reclamacao{Titulo="Buraco na calçada",Descricao="Tem uma cratera no meio da calçada",CategoriaID = 1/*categorias.Single( g => g.Titulo == "Vias Publica").CategoriaID*/, Data=DateTime.Parse("2016-01-01"),UsuarioID=1,LinkImagem="c/img/fig1.png",Status="Aberto"},
                     new Reclamacao{Titulo="Lampada Queimada",Descricao="Falta de Iluminação, devido a lampada queimada ",CategoriaID = 1/*categorias.Single( g => g.Titulo == "Iluminação").CategoriaID*/,Data=DateTime.Parse("2016-01-01"),UsuarioID=2,LinkImagem="c/img/fig2.png",Status="Aberto"}
                 };
             reclamacoes.ForEach(s => context.Reclamacoes.Add(s));
+            context.SaveChanges();
+
+            var comentarios = new List<Comentario>
+                {
+                    new Comentario{descricaoComentario="é vdd amigo", Data=DateTime.Now,UsuarioID=1,LinkImagem="c/img/fig1.png",ReclamacaoID=1}
+                };
+            comentarios.ForEach(s => context.Comentarios.Add(s));
+            context.SaveChanges();
+
+            var enderecos = new List<Endereco>
+            {
+                new Endereco {Bairro="floresta",Logradouro="Av. Cristovão Colombo" }
+            };
+            enderecos.ForEach(s => context.Enderecos.Add(s));
             context.SaveChanges();
 
         }

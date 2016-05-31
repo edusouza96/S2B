@@ -1,0 +1,63 @@
+﻿@model pjtCidadedeira.Models.Comentario
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Deletar</h2>
+
+<div>
+    <h4>Comentario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Reclamacao.Titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reclamacao.Titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descricaoComentario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descricaoComentario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UsuarioID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UsuarioID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LinkImagem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LinkImagem)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Deletar" class="btn btn-default" /> |
+            @Html.ActionLink("Retornar para lista", "Index")
+        </div>
+    }
+</div>

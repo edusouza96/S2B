@@ -10,118 +10,115 @@ using pjtCidadedeira.Models;
 
 namespace pjtCidadedeira.Controllers
 {
-    public class CategoriasController : Controller
+    public class ComentariosController : Controller
     {
         private CidadeiraDBContext db = new CidadeiraDBContext();
-        
-        // GET: Categorias
-        public ViewResult Index(string search)
+
+        // GET: Comentarios
+        public ViewResult Index(int?selectedReclamacao)
         {
-            var categoria = from categorias in db.Categorias select categorias;
-            if (!String.IsNullOrEmpty(search))
-            {
-                categoria = categoria.Where(s => s.Titulo.Contains(search));
-            }
-            return View(categoria.ToList());
+            var reclamacoes = db.Reclamacoes.OrderBy(g => g.Titulo).ToList();
+            ViewBag.selectedReclamacao = new SelectList(reclamacoes, "ReclamacaoID", "Titulo", selectedReclamacao);
+            int ReclamacaoID = selectedReclamacao.GetValueOrDefault();
+            var comentario = db.Comentarios.Where(c => !selectedReclamacao.HasValue || c.ReclamacaoID == ReclamacaoID);
+            return View(comentario.ToList());
         }
 
-        
-       
-
-        // GET: Categorias/Details/5
+        // GET: Comentarios/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Categoria categoria = db.Categorias.Find(id);
-            if (categoria == null)
+            Comentario comentario = db.Comentarios.Find(id);
+            if (comentario == null)
             {
                 return HttpNotFound();
             }
-            return View(categoria);
+            return View(comentario);
         }
 
-        // GET: Categorias/Create
+        // GET: Comentarios/Create
         public ActionResult Create()
         {
+            ViewBag.ReclamacaoID = new SelectList(db.Reclamacoes, "ReclamacaoID", "Titulo");
             return View();
         }
 
-        // POST: Categorias/Create
+        // POST: Comentarios/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "CategoriaID,Titulo,Descricao")] Categoria categoria)
+        public ActionResult Create([Bind(Include = "ComentarioID,descricaoComentario,Data,UsuarioID,LinkImagem,ReclamacaoID")] Comentario comentario)
         {
             if (ModelState.IsValid)
             {
-                db.Categorias.Add(categoria);
+                db.Comentarios.Add(comentario);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(categoria);
+            ViewBag.ReclamacaoID = new SelectList(db.Reclamacoes, "ReclamacaoID", "Titulo", comentario.ReclamacaoID);
+            return View(comentario);
         }
 
-        // GET: Categorias/Edit/5
+        // GET: Comentarios/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Categoria categoria = db.Categorias.Find(id);
-            if (categoria == null)
+            Comentario comentario = db.Comentarios.Find(id);
+            if (comentario == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.CategoriaID = new SelectList(db.Categorias, "Titulo", "Descricao", categoria.CategoriaID);
-
-            return View(categoria);
+            ViewBag.ReclamacaoID = new SelectList(db.Reclamacoes, "ReclamacaoID", "Titulo", comentario.ReclamacaoID);
+            return View(comentario);
         }
 
-        // POST: Categorias/Edit/5
+        // POST: Comentarios/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "CategoriaID,Titulo,Descricao")] Categoria categoria)
+        public ActionResult Edit([Bind(Include = "ComentarioID,descricaoComentario,Data,UsuarioID,LinkImagem,ReclamacaoID")] Comentario comentario)
         {
             if (ModelState.IsValid)
             {
-
-                db.Entry(categoria).State = EntityState.Modified;
+                db.Entry(comentario).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(categoria);
+            ViewBag.ReclamacaoID = new SelectList(db.Reclamacoes, "ReclamacaoID", "Titulo", comentario.ReclamacaoID);
+            return View(comentario);
         }
 
-        // GET: Categorias/Delete/5
+        // GET: Comentarios/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Categoria categoria = db.Categorias.Find(id);
-            if (categoria == null)
+            Comentario comentario = db.Comentarios.Find(id);
+            if (comentario == null)
             {
                 return HttpNotFound();
             }
-            return View(categoria);
+            return View(comentario);
         }
 
-        // POST: Categorias/Delete/5
+        // POST: Comentarios/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Categoria categoria = db.Categorias.Find(id);
-            db.Categorias.Remove(categoria);
+            Comentario comentario = db.Comentarios.Find(id);
+            db.Comentarios.Remove(comentario);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

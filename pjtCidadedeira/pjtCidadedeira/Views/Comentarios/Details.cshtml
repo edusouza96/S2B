@@ -1,0 +1,58 @@
+﻿@model pjtCidadedeira.Models.Comentario
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Comentario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Reclamacao.Titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reclamacao.Titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descricaoComentario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descricaoComentario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UsuarioID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UsuarioID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LinkImagem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LinkImagem)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.ComentarioID }) |
+    @Html.ActionLink("Retornar para lista", "Index")
+</p>
