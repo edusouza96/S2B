@@ -34,14 +34,14 @@
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Salvar" class="btn btn-default" />
+                <button class="btn btn-default">
+                    @Html.ActionLink("Retornar para Lista", "Index")
+                </button>
             </div>
         </div>
     </div>
 }
 
-<div>
-    @Html.ActionLink("Retornar para Lista", "Index")
-</div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

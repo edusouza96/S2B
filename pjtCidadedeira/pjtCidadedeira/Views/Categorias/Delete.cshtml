@@ -19,7 +19,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Descricao)
+            @Html.Label("Descrição")
         </dt>
 
         <dd>
@@ -32,8 +32,11 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Deletar" class="btn btn-default" /> |
-            @Html.ActionLink("Retornar para Lista", "Index")
+            <input type="submit" value="Deletar" class="btn btn-default" /> 
+            <button class="btn btn-default">
+                @Html.ActionLink("Retornar para Lista", "Index")
+            </button>
+            
         </div>
     }
 </div>

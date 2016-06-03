@@ -48,6 +48,7 @@ namespace pjtCidadedeira.Controllers
         public ActionResult Create()
         {
             ViewBag.ReclamacaoID = new SelectList(db.Reclamacoes, "ReclamacaoID", "Titulo");
+            
             return View();
         }
 
@@ -60,6 +61,7 @@ namespace pjtCidadedeira.Controllers
         {
             if (ModelState.IsValid)
             {
+                comentario.Data = DateTime.Now;
                 db.Comentarios.Add(comentario);
                 db.SaveChanges();
                 return RedirectToAction("../Reclamacoes/Index");
@@ -94,12 +96,15 @@ namespace pjtCidadedeira.Controllers
         {
             if (ModelState.IsValid)
             {
+                comentario.Data = DateTime.Now;
                 db.Entry(comentario).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("../Reclamacoes/Index");
+                // return RedirectToAction("Index");
             }
             ViewBag.ReclamacaoID = new SelectList(db.Reclamacoes, "ReclamacaoID", "Titulo", comentario.ReclamacaoID);
-            return View(comentario);
+            return RedirectToAction("../Reclamacoes/Index");
+            //  return View(comentario);
         }
 
         // GET: Comentarios/Delete/5

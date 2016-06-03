@@ -3,14 +3,13 @@
 @{
     ViewBag.Title = "Delete";
 }
-
 <h2>Deletar</h2>
 
 <div>
     <h4>Reclamação</h4>
     <hr />
     <dl class="dl-horizontal">
-        
+
         <dt>
             @Html.DisplayNameFor(model => model.Titulo)
         </dt>
@@ -20,7 +19,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Descricao)
+            @Html.Label("Descrição")
         </dt>
 
         <dd>
@@ -44,7 +43,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.LinkImagem)
+            @Html.Label("Imagem")
         </dt>
 
         <dd>
@@ -60,7 +59,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.UsuarioID)
+            @Html.Label("Usuário")
         </dt>
 
         <dd>
@@ -68,7 +67,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Endereco)
+            @Html.Label("Endereço")
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Endereco.Logradouro)
@@ -76,12 +75,16 @@
 
     </dl>
 
-    @using (Html.BeginForm()) {
+    @using (Html.BeginForm())
+    {
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Deletar" class="btn btn-default" /> |
-            @Html.ActionLink("Retornar para lista", "Index")
+            <input type="submit" value="Deletar" class="btn btn-default" />
+            <button  class="btn btn-default">
+                @Html.ActionLink("Retornar para lista", "Index")
+            </button>
         </div>
     }
 </div>
+           

@@ -4,7 +4,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Reclamações</h2>
 
 <p>
     @Html.ActionLink("Nova Reclamação", "Create")
@@ -22,7 +22,7 @@
             @Html.DisplayNameFor(model => model.Titulo)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Descricao)
+            @Html.Label("Descrição")
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Categoria)
@@ -30,19 +30,14 @@
         <th>
             @Html.DisplayNameFor(model => model.Data)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.LinkImagem)
-        </th>
+        
         <th>
             @Html.DisplayNameFor(model => model.Status)
         </th>
+        
         <th>
-            @Html.DisplayNameFor(model => model.UsuarioID)
+            Ações
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Endereco)
-        </th>
-        <th></th>
     </tr>
 
 @foreach (var item in Model) {
@@ -59,18 +54,11 @@
         <td>
             @Html.DisplayFor(modelItem => item.Data)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LinkImagem)
-        </td>
+        
         <td>
             @Html.DisplayFor(modelItem => item.Status)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.UsuarioID)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Endereco.Logradouro)
-        </td>
+        
         <td>
             @Html.ActionLink("Editar", "Edit", new { id=item.ReclamacaoID }) |
             @Html.ActionLink("Detalhes", "Details", new { id=item.ReclamacaoID }) |

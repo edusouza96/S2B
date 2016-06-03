@@ -7,7 +7,6 @@
 <h2>Detalhes</h2>
 
 <div>
-    <h4>Reclamacao</h4>
     <hr />
     <dl class="dl-horizontal">
        <dt>
@@ -19,7 +18,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Descricao)
+            @Html.Label("Descrição")
         </dt>
 
         <dd>
@@ -43,7 +42,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.LinkImagem)
+            @Html.Label("Imagem")
         </dt>
 
         <dd>
@@ -59,36 +58,40 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.UsuarioID)
+            @Html.Label("Usuario")
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.UsuarioID)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.Endereco)
+            @Html.Label("Endereço")
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Endereco.Logradouro)
         </dd>
     </dl>
-   <button class="comentario" data-id="@Model.ReclamacaoID" >
-    Comentarios
+   <button class="btn btn-default comentario" data-id="@Model.ReclamacaoID" >
+    Comentários
    </button>
+    <button  class="btn btn-default">
+       
+        @Html.ActionLink("Retornar para lista", "Index")
+    </button>
 </div>
 
 <div class="modal" id="modal">
 
 </div>
 @section scripts{
-<script>
-      $(function () { 
-          $(".comentario").click(function () {
-              var id = $(this).attr("data-id")
-              $("#modal").load("../../Comentarios/Index?id="+id, function () {
-                  $("#modal").modal();
-              })
+    <script>
+          $(function () { 
+              $(".comentario").click(function () {
+                  var id = $(this).attr("data-id")
+                  $("#modal").load("../../Comentarios/Index?id="+id, function () {
+                      $("#modal").modal();
+                  })
+              });
           });
-      });
-</script>
-    }
+    </script>
+}
