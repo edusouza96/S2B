@@ -15,12 +15,18 @@ namespace pjtCidadedeira.Controllers
         private CidadeiraDBContext db = new CidadeiraDBContext();
 
         // GET: Reclamacoes
-        public ViewResult Index(string search, int? selectedCategoria)
+        public ViewResult Index(string search, int? selectedCategoria, int ? selectedEndereco)
         {
             var categorias = db.Categorias.OrderBy(g => g.Titulo).ToList();
             ViewBag.selectedCategoria = new SelectList(categorias, "CategoriaID", "Titulo", selectedCategoria);
             int categoriaID = selectedCategoria.GetValueOrDefault();
+
+            var enderecos = db.Enderecos.OrderBy(g => g.Logradouro).ToList();
+            ViewBag.selectedEndereco = new SelectList(enderecos, "EnderecoID", "Logradouro", selectedEndereco);
+            int enderecoID = selectedEndereco.GetValueOrDefault();
+
             var reclamacao = db.Reclamacoes.Where(c => !selectedCategoria.HasValue || c.CategoriaID == categoriaID);
+            reclamacao = reclamacao.Where(c1 => !selectedEndereco.HasValue || c1.EnderecoID == enderecoID);
 
             if (!String.IsNullOrEmpty(search))
             {
@@ -48,6 +54,7 @@ namespace pjtCidadedeira.Controllers
         public ActionResult Create()
         {
             ViewBag.CategoriaID = new SelectList(db.Categorias, "CategoriaID", "Titulo");
+            ViewBag.EnderecoID = new SelectList(db.Enderecos, "EnderecoID", "Logradouro");
             return View();
         }
 
@@ -56,7 +63,7 @@ namespace pjtCidadedeira.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ReclamacaoID,Titulo,Descricao,CategoriaID,Data,LinkImagem,Status,UsuarioID")] Reclamacao reclamacao)
+        public ActionResult Create([Bind(Include = "ReclamacaoID,Titulo,Descricao,CategoriaID,Data,LinkImagem,Status,UsuarioID,EnderecoID")] Reclamacao reclamacao)
         {
             if (ModelState.IsValid)
             {
@@ -65,7 +72,7 @@ namespace pjtCidadedeira.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.CategoriaID = new SelectList(db.Categorias, "CategoriaID", "Titulo", reclamacao.CategoriaID);
-            
+            ViewBag.EnderecoID = new SelectList(db.Enderecos, "EnderecoID", "Logradouro", reclamacao.EnderecoID);
             return View(reclamacao);
         }
 
@@ -82,6 +89,7 @@ namespace pjtCidadedeira.Controllers
                 return HttpNotFound();
             }
             ViewBag.CategoriaID = new SelectList(db.Categorias, "CategoriaID", "Titulo", reclamacao.CategoriaID);
+            ViewBag.EnderecoID = new SelectList(db.Enderecos, "EnderecoID", "Logradouro", reclamacao.EnderecoID);
             return View(reclamacao);
         }
 
@@ -90,7 +98,7 @@ namespace pjtCidadedeira.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ReclamacaoID,Titulo,Descricao,CategoriaID,Data,LinkImagem,Status,UsuarioID")] Reclamacao reclamacao)
+        public ActionResult Edit([Bind(Include = "ReclamacaoID,Titulo,Descricao,CategoriaID,Data,LinkImagem,Status,UsuarioID,EnderecoID")] Reclamacao reclamacao)
         {
             if (ModelState.IsValid)
             {

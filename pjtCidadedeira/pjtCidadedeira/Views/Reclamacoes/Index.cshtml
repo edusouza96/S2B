@@ -39,6 +39,9 @@
         <th>
             @Html.DisplayNameFor(model => model.UsuarioID)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </th>
         <th></th>
     </tr>
 
@@ -66,11 +69,15 @@
             @Html.DisplayFor(modelItem => item.UsuarioID)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.Endereco.Logradouro)
+        </td>
+        <td>
             @Html.ActionLink("Editar", "Edit", new { id=item.ReclamacaoID }) |
             @Html.ActionLink("Detalhes", "Details", new { id=item.ReclamacaoID }) |
             @Html.ActionLink("Deletar", "Delete", new { id=item.ReclamacaoID })
         </td>
     </tr>
+    
 }
 
 </table>

@@ -10,8 +10,7 @@
     <h4>Reclamacao</h4>
     <hr />
     <dl class="dl-horizontal">
-        
-        <dt>
+       <dt>
             @Html.DisplayNameFor(model => model.Titulo)
         </dt>
 
@@ -66,10 +65,30 @@
         <dd>
             @Html.DisplayFor(model => model.UsuarioID)
         </dd>
-
+        <dt>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Endereco.Logradouro)
+        </dd>
     </dl>
+   <button class="comentario" data-id="@Model.ReclamacaoID" >
+    Comentarios
+   </button>
 </div>
-<p>
-    @Html.ActionLink("Editar", "Edit", new { id = Model.ReclamacaoID }) |
-    @Html.ActionLink("Retornar para lista", "Index")
-</p>
+
+<div class="modal" id="modal">
+
+</div>
+@section scripts{
+<script>
+      $(function () { 
+          $(".comentario").click(function () {
+              var id = $(this).attr("data-id")
+              $("#modal").load("../../Comentarios/Index?id="+id, function () {
+                  $("#modal").modal();
+              })
+          });
+      });
+</script>
+    }

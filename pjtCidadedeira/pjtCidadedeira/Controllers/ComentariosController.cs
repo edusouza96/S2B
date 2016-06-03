@@ -15,12 +15,17 @@ namespace pjtCidadedeira.Controllers
         private CidadeiraDBContext db = new CidadeiraDBContext();
 
         // GET: Comentarios
-        public ViewResult Index(int?selectedReclamacao)
+        public ActionResult Index(int?id, int?selectedReclamacao)
         {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
             var reclamacoes = db.Reclamacoes.OrderBy(g => g.Titulo).ToList();
             ViewBag.selectedReclamacao = new SelectList(reclamacoes, "ReclamacaoID", "Titulo", selectedReclamacao);
             int ReclamacaoID = selectedReclamacao.GetValueOrDefault();
             var comentario = db.Comentarios.Where(c => !selectedReclamacao.HasValue || c.ReclamacaoID == ReclamacaoID);
+            comentario = comentario.Where(c => c.ReclamacaoID == id);
             return View(comentario.ToList());
         }
 
@@ -57,7 +62,7 @@ namespace pjtCidadedeira.Controllers
             {
                 db.Comentarios.Add(comentario);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("../Reclamacoes/Index");
             }
 
             ViewBag.ReclamacaoID = new SelectList(db.Reclamacoes, "ReclamacaoID", "Titulo", comentario.ReclamacaoID);
@@ -120,7 +125,7 @@ namespace pjtCidadedeira.Controllers
             Comentario comentario = db.Comentarios.Find(id);
             db.Comentarios.Remove(comentario);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("../Reclamacoes/Index");
         }
 
         protected override void Dispose(bool disposing)

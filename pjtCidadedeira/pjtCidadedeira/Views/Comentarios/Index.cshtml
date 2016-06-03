@@ -4,54 +4,69 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Adicionar Comentário", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Reclamacao.Titulo)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.descricaoComentario)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Data)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.UsuarioID)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.LinkImagem)
-        </th>
-        <th></th>
-    </tr>
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+            <!-------- ---->
+            <h2>Index</h2>
+            <p>
+                @Html.ActionLink("Adicionar Comentário", "Create")
+            </p>
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Reclamacao.Titulo)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.descricaoComentario)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Data)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.UsuarioID)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LinkImagem)
+                    </th>
+                    <th></th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Reclamacao.Titulo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.descricaoComentario)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Data)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UsuarioID)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LinkImagem)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Editar", "Edit", new { id = item.ComentarioID }) |
+                            @Html.ActionLink("Detalhes", "Details", new { id = item.ComentarioID }) |
+                            @Html.ActionLink("Deletar", "Delete", new { id = item.ComentarioID })
+                        </td>
+                    </tr>
+                }
+            </table>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Reclamacao.Titulo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.descricaoComentario)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Data)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.UsuarioID)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LinkImagem)
-        </td>
-        <td>
-            @Html.ActionLink("Editar", "Edit", new { id=item.ComentarioID }) |
-            @Html.ActionLink("Detalhes", "Details", new { id=item.ComentarioID }) |
-            @Html.ActionLink("Deletar", "Delete", new { id=item.ComentarioID })
-        </td>
-    </tr>
-}
-
-</table>
+            <!------------>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+    </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->

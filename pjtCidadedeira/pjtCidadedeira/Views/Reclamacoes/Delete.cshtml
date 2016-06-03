@@ -67,6 +67,13 @@
             @Html.DisplayFor(model => model.UsuarioID)
         </dd>
 
+        <dt>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Endereco.Logradouro)
+        </dd>
+
     </dl>
 
     @using (Html.BeginForm()) {
