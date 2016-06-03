@@ -1,0 +1,45 @@
+﻿@model IEnumerable<pjtCidadedeira.Models.Endereco>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Endereços</h2>
+<p>
+    @Html.ActionLink("Adicionar Endereço", "Create")
+</p>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Procurar Por Bairro: @Html.TextBox("Search")
+        <input type="submit" value="Buscar"/>
+    </p>
+}
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Bairro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Logradouro)
+            </th>
+            <th>
+                @Html.Label("Ações")
+            </th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Bairro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Logradouro)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.EnderecoID }) |
+                    @Html.ActionLink("Deletar", "Delete", new { id = item.EnderecoID }) 
+                </td>
+            </tr>
+        }
+    </table>

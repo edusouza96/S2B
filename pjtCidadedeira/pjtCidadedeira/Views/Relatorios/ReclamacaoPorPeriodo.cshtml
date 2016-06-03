@@ -1,0 +1,41 @@
+﻿@model IEnumerable<pjtCidadedeira.Models.PorReclamacao>
+
+@{
+    ViewBag.Title = "ReclamacaoPorPeriodo";
+}
+
+<h2>Reclamação Por Periodo</h2>
+@using (Html.BeginForm())
+{
+    <p>
+        Data: @Html.TextBox("dataBuscar")
+        <input type="submit" value="Buscar" />
+    </p>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.Label("Quantidade")
+        </th>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.categoria)
+        </th>
+        
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @item.ReclamacaoCount
+        </td>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.categoria.Titulo)
+        </td>
+       
+       
+    </tr>
+}
+
+</table>
