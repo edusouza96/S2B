@@ -1,0 +1,42 @@
+﻿@model IEnumerable<pjtCidadedeira.Models.PorStatus>
+@{
+    ViewBag.Title = "PorcentagemPorStatus";
+}
+
+<h2>Porcentagem Por Status</h2>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Categoria: @Html.TextBox("categoriaSearch")
+        <input type="submit" value="Buscar" />
+    </p>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.Label("Quantidade")
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.StatusCount %
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+
+        </tr>
+    }
+
+</table>

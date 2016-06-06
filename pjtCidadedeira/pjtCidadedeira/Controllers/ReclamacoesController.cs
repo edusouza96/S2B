@@ -67,6 +67,8 @@ namespace pjtCidadedeira.Controllers
         {
             if (ModelState.IsValid)
             {
+                reclamacao.Data = DateTime.Now;
+                reclamacao.Status = "Aberto";
                 db.Reclamacoes.Add(reclamacao);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -102,6 +104,7 @@ namespace pjtCidadedeira.Controllers
         {
             if (ModelState.IsValid)
             {
+                reclamacao.Data = DateTime.Now;
                 db.Entry(reclamacao).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

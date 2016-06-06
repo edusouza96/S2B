@@ -1,0 +1,34 @@
+﻿@model pjtCidadedeira.Models.Endereco
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Endereço</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Bairro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bairro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Logradouro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Logradouro)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.EnderecoID }) |
+    @Html.ActionLink("Retornar para lista", "Index")
+</p>

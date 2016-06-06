@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<pjtCidadedeira.Models.Comentario>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title1 = "Index";
 }
 
 
@@ -13,60 +13,77 @@
         </div>
         <div class="modal-body">
             <!-------- ---->
-            <h2>Index</h2>
-            <p>
-                @Html.ActionLink("Adicionar Comentário", "Create")
-            </p>
-            <table class="table">
-                <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Reclamacao.Titulo)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.descricaoComentario)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Data)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.UsuarioID)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.LinkImagem)
-                    </th>
-                    <th></th>
-                </tr>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Reclamacao.Titulo)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.descricaoComentario)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Data)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.UsuarioID)
-                        </td>
-                        <td>
+            <h4><b>Comentários</b></h4>
+            @foreach (var item in Model)
+            {
+                <div class="conjunto">
+                    <div id="usuario">
+                        @Html.DisplayFor(modelItem => item.UsuarioID)
+                    </div>
+                    <div id="conteudo">
+                        @Html.DisplayFor(modelItem => item.descricaoComentario)
+                        <div id="img">
                             @Html.DisplayFor(modelItem => item.LinkImagem)
-                        </td>
-                        <td>
-                            @Html.ActionLink("Editar", "Edit", new { id = item.ComentarioID }) |
-                            @Html.ActionLink("Detalhes", "Details", new { id = item.ComentarioID }) |
-                            @Html.ActionLink("Deletar", "Delete", new { id = item.ComentarioID })
-                        </td>
-                    </tr>
-                }
-            </table>
+                        </div>
+                    </div>
+                   <div id="rodape">
+                       <button type="button" class="btn btn-default comentarioEditar" data-id="@item.ComentarioID">
+                           Editar
+                       </button>
+                       <button type="button" class="btn btn-default comentarioDeletar" data-id="@item.ComentarioID">
+                           Deletar
+                       </button>
+                       
+                       <span class="dt">
+                           @Html.DisplayFor(modelItem => item.Data)
+                       </span>
+                   </div>
+                </div>
+            }
 
             <!------------>
         </div>
         <div class="modal-footer">
+            <button type="button" class="btn btn-default comentarioNovo" data-dismiss="modal"> Adicionar Comentario </button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
         </div>
     </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->
+
+<div class="modal" id="modal">
+
+</div>
+@section scripts{
+    <script>
+          $(function () {
+              $(".comentarioNovo").click(function () {
+                  $("#modal").load("../../Comentarios/Create", function () {
+                      $("#modal").modal();
+                  })
+              });
+
+              $(".comentarioEditar").click(function () {
+                  var id = $(this).attr("data-id")
+                  $("#modal").load("../../Comentarios/Edit?id=" + id, function () {
+                      $("#modal").modal();
+                  })
+              });
+
+              $(".comentarioDeletar").click(function () {
+                  var id = $(this).attr("data-id")
+                  $("#modal").load("../../Comentarios/Delete?id=" + id, function () {
+                      $("#modal").modal();
+                  })
+              });
+
+          });
+          $('.conjunto').each(function (i) {
+              if (i % 2 == 0) {
+                  $(this).css("background-color", "#ddd");
+              } else {
+                  $(this).css("background-color", "#fff");
+              }
+          });
+          $(".dt").css("padding-left", "45%");
+       </script>
+}

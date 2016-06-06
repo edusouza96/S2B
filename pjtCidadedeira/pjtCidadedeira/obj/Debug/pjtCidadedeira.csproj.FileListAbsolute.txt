@@ -570,3 +570,331 @@ C:\Users\Eduardo\Source\Repos\S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Ow
 C:\Users\Eduardo\Source\Repos\S2B\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.dll
 C:\Users\Eduardo\Source\Repos\S2B\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.pdb
 C:\Users\Eduardo\Source\Repos\S2B\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.csprojResolveAssemblyReference.cache
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\ApplicationInsights.config
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\csc.exe
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\System.Collections.Immutable.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\System.Reflection.Metadata.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\vbc.exe
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\VBCSCompiler.exe
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\VBCSCompiler.exe.config
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\pjtCidadedeira.dll.config
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\pjtCidadedeira.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\pjtCidadedeira.pdb
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Antlr3.Runtime.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\EntityFramework.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\EntityFramework.SqlServer.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.Agent.Intercept.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.DependencyCollector.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.Web.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.WindowsServer.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.ApplicationInsights.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.Core.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Cookies.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Facebook.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Google.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.OAuth.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Twitter.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Web.Infrastructure.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Newtonsoft.Json.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Owin.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Helpers.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Mvc.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Optimization.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Razor.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.Deployment.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.Razor.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\WebGrease.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.DependencyCollector.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.Web.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.WindowsServer.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.ApplicationInsights.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Helpers.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Mvc.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Optimization.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Razor.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.Deployment.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.Razor.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Antlr3.Runtime.pdb
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Newtonsoft.Json.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\EntityFramework.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\EntityFramework.SqlServer.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.Core.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Facebook.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Cookies.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.OAuth.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Google.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Twitter.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\2.6\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.csprojResolveAssemblyReference.cache
+E:\2.6\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.dll
+E:\2.6\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.pdb
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\ApplicationInsights.config
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\csc.exe
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\System.Collections.Immutable.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\System.Reflection.Metadata.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\vbc.exe
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\VBCSCompiler.exe
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\VBCSCompiler.exe.config
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\pjtCidadedeira.dll.config
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\pjtCidadedeira.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\pjtCidadedeira.pdb
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Antlr3.Runtime.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\EntityFramework.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\EntityFramework.SqlServer.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.Agent.Intercept.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.DependencyCollector.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.Web.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.WindowsServer.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.ApplicationInsights.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.Core.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Cookies.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Facebook.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Google.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.OAuth.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Twitter.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Web.Infrastructure.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Newtonsoft.Json.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Owin.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Helpers.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Mvc.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Optimization.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Razor.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.Deployment.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.Razor.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\WebGrease.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.DependencyCollector.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.Web.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.WindowsServer.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.ApplicationInsights.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Helpers.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Mvc.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Optimization.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Razor.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.Deployment.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.Razor.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Antlr3.Runtime.pdb
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Newtonsoft.Json.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\EntityFramework.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\EntityFramework.SqlServer.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.Core.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Facebook.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Cookies.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.OAuth.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Google.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Twitter.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\2.6\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.csprojResolveAssemblyReference.cache
+G:\2.6\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.dll
+G:\2.6\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.pdb
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\ApplicationInsights.config
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\roslyn\csc.exe
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\roslyn\System.Collections.Immutable.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\roslyn\System.Reflection.Metadata.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\roslyn\vbc.exe
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\roslyn\VBCSCompiler.exe
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\roslyn\VBCSCompiler.exe.config
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\pjtCidadedeira.dll.config
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\pjtCidadedeira.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\pjtCidadedeira.pdb
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Antlr3.Runtime.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\EntityFramework.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\EntityFramework.SqlServer.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.DependencyCollector.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.Web.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.WindowsServer.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.ApplicationInsights.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Google.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Web.Infrastructure.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Newtonsoft.Json.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Owin.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Helpers.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Mvc.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Optimization.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Razor.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.Deployment.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.Razor.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\WebGrease.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.DependencyCollector.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.Web.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.WindowsServer.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.ApplicationInsights.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Helpers.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Mvc.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Optimization.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Razor.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.Deployment.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.Razor.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Antlr3.Runtime.pdb
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Newtonsoft.Json.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\EntityFramework.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\EntityFramework.SqlServer.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Google.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.csprojResolveAssemblyReference.cache
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.dll
+E:\Trabalho S2B\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.pdb
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\ApplicationInsights.config
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\roslyn\csc.exe
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\roslyn\System.Collections.Immutable.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\roslyn\System.Reflection.Metadata.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\roslyn\vbc.exe
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\roslyn\VBCSCompiler.exe
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\roslyn\VBCSCompiler.exe.config
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\pjtCidadedeira.dll.config
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\pjtCidadedeira.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\pjtCidadedeira.pdb
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Antlr3.Runtime.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\EntityFramework.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\EntityFramework.SqlServer.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.Agent.Intercept.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.DependencyCollector.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.Web.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.WindowsServer.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.ApplicationInsights.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.Core.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Cookies.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Facebook.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Google.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.OAuth.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Twitter.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Web.Infrastructure.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Newtonsoft.Json.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Owin.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Helpers.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Mvc.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Optimization.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Razor.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.Deployment.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.Razor.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\WebGrease.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.DependencyCollector.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.Web.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AI.WindowsServer.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.ApplicationInsights.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Helpers.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Mvc.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Optimization.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\System.Web.Razor.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.Deployment.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\System.Web.WebPages.Razor.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Antlr3.Runtime.pdb
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Newtonsoft.Json.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\EntityFramework.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\EntityFramework.SqlServer.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.Core.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Facebook.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Cookies.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.OAuth.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Google.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Twitter.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.dll
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.pdb
+G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.csprojResolveAssemblyReference.cache

@@ -1,0 +1,35 @@
+﻿@model IEnumerable<pjtCidadedeira.Models.PorComentario>
+@{
+    ViewBag.Title = "ComentarioPorPeriodo";
+}
+
+<h2>Comentario Por Periodo</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.Label("Quantidade")
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.categoria)
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.ComentarioCount
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.categoria.Titulo)
+            </td>
+
+
+        </tr>
+    }
+
+</table>

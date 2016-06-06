@@ -1,0 +1,42 @@
+﻿@model pjtCidadedeira.Models.Endereco
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Deletar</h2>
+
+<div>
+    <h4>Endereço</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Bairro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bairro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Logradouro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Logradouro)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Deletar" class="btn btn-default" />
+            <button class="btn btn-default">
+                @Html.ActionLink("Retornar para lista", "Index")
+            </button>
+            
+        </div>
+    }
+</div>
