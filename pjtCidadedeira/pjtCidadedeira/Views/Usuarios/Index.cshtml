@@ -1,0 +1,53 @@
+﻿@model IEnumerable<pjtCidadedeira.Models.Usuario>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Novo Usuário", "Create")
+</p>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Buscar Por nome: @Html.TextBox("Search")
+        <input type="submit" value="Buscar" />
+    </p>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoUsuario)
+        </th>
+        <th>Ações</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoUsuario)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.UsuarioID }) |
+            @Html.ActionLink("Detalhe", "Details", new { id=item.UsuarioID }) |
+            @Html.ActionLink("Deletar", "Delete", new { id=item.UsuarioID })
+        </td>
+    </tr>
+}
+
+</table>

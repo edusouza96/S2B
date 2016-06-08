@@ -16,6 +16,7 @@ namespace pjtCidadedeira.Models
         public DbSet<Reclamacao> Reclamacoes { get; set; }
         public DbSet<Comentario> Comentarios { get; set; }
         public DbSet<Endereco> Enderecos { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
     }
 }

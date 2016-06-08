@@ -569,7 +569,6 @@ C:\Users\Eduardo\Source\Repos\S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Ow
 C:\Users\Eduardo\Source\Repos\S2B\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Eduardo\Source\Repos\S2B\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.dll
 C:\Users\Eduardo\Source\Repos\S2B\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.pdb
-C:\Users\Eduardo\Source\Repos\S2B\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.csprojResolveAssemblyReference.cache
 E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\ApplicationInsights.config
 E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\csc.exe
 E:\2.6\pjtCidadedeira\pjtCidadedeira\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -898,3 +897,4 @@ G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\bin\Microsoft.Owin.Security.Micros
 G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.dll
 G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.pdb
 G:\Trabalho S2b\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.csprojResolveAssemblyReference.cache
+C:\Users\Eduardo\Source\Repos\S2B\pjtCidadedeira\pjtCidadedeira\obj\Debug\pjtCidadedeira.csprojResolveAssemblyReference.cache

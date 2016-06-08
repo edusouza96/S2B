@@ -11,6 +11,7 @@ namespace pjtCidadedeira.Models
     {
         protected override void Seed(CidadeiraDBContext context)
         {
+            #region Categoria
             var categorias = new List<Categoria>
                 {
                     new Categoria{Titulo="Iluminação",Descricao="Problemas de iluminação em determinado perimetro"},
@@ -18,6 +19,9 @@ namespace pjtCidadedeira.Models
                 };
             categorias.ForEach(s => context.Categorias.Add(s));
             context.SaveChanges();
+            #endregion
+
+            #region reclamação
 
             var reclamacoes = new List<Reclamacao>
                 {
@@ -26,14 +30,18 @@ namespace pjtCidadedeira.Models
                 };
             reclamacoes.ForEach(s => context.Reclamacoes.Add(s));
             context.SaveChanges();
+            #endregion
 
+            #region Comentario
             var comentarios = new List<Comentario>
                 {
                     new Comentario{descricaoComentario="é vdd amigo", Data=DateTime.Now,UsuarioID=1,LinkImagem="c/img/fig1.png",ReclamacaoID=1}
                 };
             comentarios.ForEach(s => context.Comentarios.Add(s));
             context.SaveChanges();
+            #endregion
 
+            #region Endereço
             var enderecos = new List<Endereco>
             {
                 new Endereco {Bairro="floresta",Logradouro="Av. Cristovão Colombo" }
@@ -41,6 +49,16 @@ namespace pjtCidadedeira.Models
             enderecos.ForEach(s => context.Enderecos.Add(s));
             context.SaveChanges();
 
+            #endregion
+
+            #region Usuario
+            var usuarios = new List<Usuario>
+            {
+                new Usuario {Nome="Eduardo Souza", User="edu96", Senha="abc123", TipoUsuario="Administrador", Email="eduardo@provedor.com.br" }
+            };
+            usuarios.ForEach(s => context.Usuarios.Add(s));
+            context.SaveChanges();
+            #endregion
         }
     }
 }

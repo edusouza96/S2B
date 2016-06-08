@@ -23,10 +23,7 @@ namespace pjtCidadedeira.Controllers
                 categoria = categoria.Where(s => s.Titulo.Contains(search));
             }
             return View(categoria.ToList());
-        }
-
-        
-       
+        }   
 
         // GET: Categorias/Details/5
         public ActionResult Details(int? id)
