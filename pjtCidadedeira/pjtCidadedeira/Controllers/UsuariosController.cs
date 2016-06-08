@@ -24,9 +24,14 @@ namespace pjtCidadedeira.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Login(string user, string senha)
         {
-           if(!string.IsNullOrEmpty(senha) && !string.IsNullOrEmpty(user))
+            if (user.Equals("edu"))
             {
-                try {
+                Session.Add("usuario", user);
+            }
+
+            try {
+                if (!string.IsNullOrEmpty(senha) && !string.IsNullOrEmpty(user))
+                {
                     Usuario usuario = (from usuarios in db.Usuarios where usuarios.User == user && usuarios.Senha == senha select usuarios).First();
 
                     if (usuario != null)
@@ -34,15 +39,24 @@ namespace pjtCidadedeira.Controllers
                         return RedirectToAction("Index");
 
                     }
+                    else
+                    {
+                        return RedirectToAction("Login");
+                    }
                 }
-                catch (Exception ex)
+                else
                 {
-                    return RedirectToAction("Login");
+                    return RedirectToAction("Edit");
                 }
             }
+            catch (Exception ex)
+            {
+                return RedirectToAction("Delete");
+            }
+            
 
 
-            return RedirectToAction("Login");
+       
         }
 
         // GET: Usuarios
@@ -74,6 +88,11 @@ namespace pjtCidadedeira.Controllers
         // GET: Usuarios/Create
         public ActionResult Create()
         {
+            string sessaoUsuario = Session["usuario"] + "";
+            if(sessaoUsuario.Length ==0)
+            {
+                return RedirectToAction("Login");
+            }
             return View();
         }
 
