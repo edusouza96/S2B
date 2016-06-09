@@ -9,8 +9,9 @@ namespace pjtCidadedeira.Models
     public class PorReclamacao
     {
         
-        public Categoria categoria { get; set; }
+        public string propriedade { get; set; }
         public DateTime data { get; set; }
-        public int ReclamacaoCount { get; set; }
+        public int ReclamacaoCount { get; set; }
+
     }
 }

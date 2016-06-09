@@ -8,7 +8,10 @@
 @using (Html.BeginForm())
 {
     <p>
-        Categoria: @Html.TextBox("categoriaSearch")
+        @Html.RadioButton("opcao", "categoria") Por Categoria
+        @Html.RadioButton("opcao", "bairro") Por Bairro
+        <br />
+        Categoria: @Html.TextBox("search")
         <input type="submit" value="Buscar" />
     </p>
 }
@@ -20,7 +23,7 @@
         </th>
 
         <th>
-            @Html.DisplayNameFor(model => model.Status)
+            @Html.DisplayNameFor(model => model.propriedade)
         </th>
 
     </tr>

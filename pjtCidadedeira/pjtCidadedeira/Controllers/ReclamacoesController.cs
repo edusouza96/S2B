@@ -15,7 +15,7 @@ namespace pjtCidadedeira.Controllers
         private CidadeiraDBContext db = new CidadeiraDBContext();
 
         // GET: Reclamacoes
-        public ViewResult Index(string search, int? selectedCategoria, int ? selectedEndereco)
+        public ViewResult Index(string search, int? selectedCategoria, int ? selectedEndereco, int ? selectedUsuarios)
         {
             var categorias = db.Categorias.OrderBy(g => g.Titulo).ToList();
             ViewBag.selectedCategoria = new SelectList(categorias, "CategoriaID", "Titulo", selectedCategoria);
@@ -24,6 +24,10 @@ namespace pjtCidadedeira.Controllers
             var enderecos = db.Enderecos.OrderBy(g => g.Logradouro).ToList();
             ViewBag.selectedEndereco = new SelectList(enderecos, "EnderecoID", "Logradouro", selectedEndereco);
             int enderecoID = selectedEndereco.GetValueOrDefault();
+
+            var usuarios = db.Usuarios.OrderBy(g => g.User).ToList();
+            ViewBag.selectedUsuarios = new SelectList(usuarios, "UsuarioID", "User", selectedUsuarios);
+            int usuarioID = selectedUsuarios.GetValueOrDefault();
 
             var reclamacao = db.Reclamacoes.Where(c => !selectedCategoria.HasValue || c.CategoriaID == categoriaID);
             reclamacao = reclamacao.Where(c1 => !selectedEndereco.HasValue || c1.EnderecoID == enderecoID);
@@ -55,6 +59,8 @@ namespace pjtCidadedeira.Controllers
         {
             ViewBag.CategoriaID = new SelectList(db.Categorias, "CategoriaID", "Titulo");
             ViewBag.EnderecoID = new SelectList(db.Enderecos, "EnderecoID", "Logradouro");
+            ViewBag.UsuarioID = new SelectList(db.Usuarios, "UsuarioID", "User");
+
             return View();
         }
 
@@ -75,6 +81,8 @@ namespace pjtCidadedeira.Controllers
             }
             ViewBag.CategoriaID = new SelectList(db.Categorias, "CategoriaID", "Titulo", reclamacao.CategoriaID);
             ViewBag.EnderecoID = new SelectList(db.Enderecos, "EnderecoID", "Logradouro", reclamacao.EnderecoID);
+            ViewBag.UsuarioID = new SelectList(db.Usuarios, "UsuarioID", "User", reclamacao.UsuarioID);
+
             return View(reclamacao);
         }
 
@@ -92,6 +100,8 @@ namespace pjtCidadedeira.Controllers
             }
             ViewBag.CategoriaID = new SelectList(db.Categorias, "CategoriaID", "Titulo", reclamacao.CategoriaID);
             ViewBag.EnderecoID = new SelectList(db.Enderecos, "EnderecoID", "Logradouro", reclamacao.EnderecoID);
+            ViewBag.UsuarioID = new SelectList(db.Usuarios, "UsuarioID", "User", reclamacao.UsuarioID);
+
             return View(reclamacao);
         }
 

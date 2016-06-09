@@ -11,6 +11,14 @@ namespace pjtCidadedeira.Models
     {
         protected override void Seed(CidadeiraDBContext context)
         {
+            #region Usuario
+            var usuarios = new List<Usuario>
+            {
+                new Usuario {Nome="Eduardo Souza", User="edu96", Senha="abc123", TipoUsuario="Administrador", Email="eduardo@provedor.com.br" }
+            };
+            usuarios.ForEach(s => context.Usuarios.Add(s));
+            context.SaveChanges();
+            #endregion
             #region Categoria
             var categorias = new List<Categoria>
                 {
@@ -25,8 +33,8 @@ namespace pjtCidadedeira.Models
 
             var reclamacoes = new List<Reclamacao>
                 {
-                    new Reclamacao{Titulo="Buraco na calçada",Descricao="Tem uma cratera no meio da calçada",CategoriaID = 1/*categorias.Single( g => g.Titulo == "Vias Publica").CategoriaID*/, Data=DateTime.Parse("2016-01-01"),UsuarioID=1,LinkImagem="c/img/fig1.png",Status="Aberto"},
-                    new Reclamacao{Titulo="Lampada Queimada",Descricao="Falta de Iluminação, devido a lampada queimada ",CategoriaID = 1/*categorias.Single( g => g.Titulo == "Iluminação").CategoriaID*/,Data=DateTime.Parse("2016-01-01"),UsuarioID=2,LinkImagem="c/img/fig2.png",Status="Aberto"}
+                    new Reclamacao{Titulo="Buraco na calçada",Descricao="Tem uma cratera no meio da calçada",CategoriaID = 1, Data=DateTime.Parse("2016-01-01"),UsuarioID=1,LinkImagem="c/img/fig1.png",Status="Aberto"},
+                    new Reclamacao{Titulo="Lampada Queimada",Descricao="Falta de Iluminação, devido a lampada queimada ",CategoriaID = 1,Data=DateTime.Parse("2016-01-01"),UsuarioID=1,LinkImagem="c/img/fig2.png",Status="Aberto"}
                 };
             reclamacoes.ForEach(s => context.Reclamacoes.Add(s));
             context.SaveChanges();
@@ -51,14 +59,7 @@ namespace pjtCidadedeira.Models
 
             #endregion
 
-            #region Usuario
-            var usuarios = new List<Usuario>
-            {
-                new Usuario {Nome="Eduardo Souza", User="edu96", Senha="abc123", TipoUsuario="Administrador", Email="eduardo@provedor.com.br" }
-            };
-            usuarios.ForEach(s => context.Usuarios.Add(s));
-            context.SaveChanges();
-            #endregion
+           
         }
     }
 }

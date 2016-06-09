@@ -15,7 +15,7 @@ namespace pjtCidadedeira.Controllers
         private CidadeiraDBContext db = new CidadeiraDBContext();
 
         // GET: Comentarios
-        public ActionResult Index(int?id, int?selectedReclamacao)
+        public ActionResult Index(int?id, int?selectedReclamacao, int? selectedUsuarios)
         {
             if (id == null)
             {
@@ -24,6 +24,11 @@ namespace pjtCidadedeira.Controllers
             var reclamacoes = db.Reclamacoes.OrderBy(g => g.Titulo).ToList();
             ViewBag.selectedReclamacao = new SelectList(reclamacoes, "ReclamacaoID", "Titulo", selectedReclamacao);
             int ReclamacaoID = selectedReclamacao.GetValueOrDefault();
+
+            var usuarios = db.Usuarios.OrderBy(g => g.User).ToList();
+            ViewBag.selectedUsuarios = new SelectList(usuarios, "UsuariosID", "User", selectedUsuarios);
+            int UsuarioID = selectedUsuarios.GetValueOrDefault();
+
             var comentario = db.Comentarios.Where(c => !selectedReclamacao.HasValue || c.ReclamacaoID == ReclamacaoID);
             comentario = comentario.Where(c => c.ReclamacaoID == id);
             return View(comentario.ToList());
@@ -48,7 +53,8 @@ namespace pjtCidadedeira.Controllers
         public ActionResult Create()
         {
             ViewBag.ReclamacaoID = new SelectList(db.Reclamacoes, "ReclamacaoID", "Titulo");
-            
+            ViewBag.UsuarioID = new SelectList(db.Usuarios, "UsuarioID", "User");
+
             return View();
         }
 
@@ -68,6 +74,8 @@ namespace pjtCidadedeira.Controllers
             }
 
             ViewBag.ReclamacaoID = new SelectList(db.Reclamacoes, "ReclamacaoID", "Titulo", comentario.ReclamacaoID);
+            ViewBag.UsuarioID = new SelectList(db.Usuarios, "UsuariosID", "User", comentario.UsuarioID);
+
             return View(comentario);
         }
 
@@ -84,6 +92,8 @@ namespace pjtCidadedeira.Controllers
                 return HttpNotFound();
             }
             ViewBag.ReclamacaoID = new SelectList(db.Reclamacoes, "ReclamacaoID", "Titulo", comentario.ReclamacaoID);
+            ViewBag.UsuarioID = new SelectList(db.Usuarios, "UsuarioID", "User", comentario.UsuarioID);
+
             return View(comentario);
         }
 
@@ -103,6 +113,8 @@ namespace pjtCidadedeira.Controllers
                 // return RedirectToAction("Index");
             }
             ViewBag.ReclamacaoID = new SelectList(db.Reclamacoes, "ReclamacaoID", "Titulo", comentario.ReclamacaoID);
+            ViewBag.UsuarioID = new SelectList(db.Usuarios, "UsuariosID", "User", comentario.UsuarioID);
+
             return RedirectToAction("../Reclamacoes/Index");
             //  return View(comentario);
         }

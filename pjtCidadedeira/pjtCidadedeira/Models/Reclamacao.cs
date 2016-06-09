@@ -18,6 +18,7 @@ namespace pjtCidadedeira.Models
         public int EnderecoID { get; set; }
         public virtual Categoria Categoria { get; set; }
         public virtual Endereco Endereco { get; set; }
+        public virtual Usuario Usuario { get; set; }
         public virtual ICollection<Comentario> Comentario { get; set; }
     }
 }

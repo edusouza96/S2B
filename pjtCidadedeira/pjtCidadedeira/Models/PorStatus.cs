@@ -7,9 +7,8 @@ namespace pjtCidadedeira.Models
 {
     public class PorStatus
     {
-        public Categoria categoria { get; set; }
-        public Endereco endereco { get; set; }
-        public Reclamacao reclamacao { get; set; }
+        
+        public string propriedade { get; set; }
         public String Status { get; set; }
         public int StatusCount { get; set; }
     }

@@ -4,6 +4,17 @@
 }
 
 <h2>Comentario Por Periodo</h2>
+@using (Html.BeginForm())
+{
+    <p>
+        @Html.RadioButton("opcao", "categoria") Por Categoria
+        @Html.RadioButton("opcao", "bairro") Por Bairro
+        @Html.RadioButton("opcao", "data") Por Data
+        <br />
+        
+        <input type="submit" value="Buscar" />
+    </p>
+}
 
 <table class="table">
     <tr>
@@ -12,7 +23,7 @@
         </th>
 
         <th>
-            @Html.DisplayNameFor(model => model.categoria)
+            @Html.DisplayNameFor(model => model.propriedade)
         </th>
 
     </tr>
@@ -25,7 +36,7 @@
             </td>
 
             <td>
-                @Html.DisplayFor(modelItem => item.categoria.Titulo)
+                @Html.DisplayFor(modelItem => item.propriedade)
             </td>
 
 

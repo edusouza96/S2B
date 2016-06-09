@@ -7,9 +7,7 @@ namespace pjtCidadedeira.Models
 {
     public class PorComentario
     {
-        public Categoria categoria { get; set; }
-        public Endereco endereco { get; set; }
-        public Reclamacao reclamacao { get; set; }
+        public string propriedade { get; set; }
         public DateTime data { get; set; }
         public int ComentarioCount { get; set; }
     }

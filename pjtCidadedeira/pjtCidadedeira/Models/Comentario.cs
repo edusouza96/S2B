@@ -13,7 +13,7 @@ namespace pjtCidadedeira.Models
         public int UsuarioID { get; set; }
         public string LinkImagem { get; set; }
         public int ReclamacaoID { get; set; }
-
+        public virtual Usuario Usuario { get; set; }
         public virtual Reclamacao Reclamacao { get; set; }
     }
 }

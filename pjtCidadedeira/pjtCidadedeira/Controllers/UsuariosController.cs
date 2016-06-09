@@ -24,11 +24,6 @@ namespace pjtCidadedeira.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Login(string user, string senha)
         {
-            if (user.Equals("edu"))
-            {
-                Session.Add("usuario", user);
-            }
-
             try {
                 if (!string.IsNullOrEmpty(senha) && !string.IsNullOrEmpty(user))
                 {
@@ -46,12 +41,12 @@ namespace pjtCidadedeira.Controllers
                 }
                 else
                 {
-                    return RedirectToAction("Edit");
+                    return RedirectToAction("Login");
                 }
             }
             catch (Exception ex)
             {
-                return RedirectToAction("Delete");
+                return RedirectToAction("Login");
             }
             
 
@@ -88,11 +83,7 @@ namespace pjtCidadedeira.Controllers
         // GET: Usuarios/Create
         public ActionResult Create()
         {
-            string sessaoUsuario = Session["usuario"] + "";
-            if(sessaoUsuario.Length ==0)
-            {
-                return RedirectToAction("Login");
-            }
+            
             return View();
         }
 
